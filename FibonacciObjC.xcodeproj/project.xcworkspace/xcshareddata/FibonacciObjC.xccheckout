@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DA400B5F-AA83-4A7A-BECD-F4735B3288C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FibonacciObjC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE4CE1CCAEB9BE874BF711DEBB120123D7E9E326</key>
+		<string>github.com:daviskoh/FibonacciObjC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FibonacciObjC.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE4CE1CCAEB9BE874BF711DEBB120123D7E9E326</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:daviskoh/FibonacciObjC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE4CE1CCAEB9BE874BF711DEBB120123D7E9E326</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE4CE1CCAEB9BE874BF711DEBB120123D7E9E326</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FibonacciObjC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
