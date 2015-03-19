@@ -13,9 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *answerLabel;
 @property (strong, nonatomic) IBOutlet UITextField *userInput;
 
-
-- (int)fibonacci:(int)n;
-
 - (IBAction)checkNum:(id)sender;
 
 @end

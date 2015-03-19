@@ -32,35 +32,12 @@
     [super tearDown];
 }
 
-- (void)testFibonacci {
-
-    // index: 0, 1, 2, 3, 4, 5, 6, 07, 08, 09
-    // fibon: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
-    
-    XCTAssertEqual([_ctrl fibonacci: 0], 0);
-    XCTAssertEqual([_ctrl fibonacci: 1], 1);
-    XCTAssertEqual([_ctrl fibonacci: 2], 1);
-    XCTAssertEqual([_ctrl fibonacci: 3], 2);
-    XCTAssertEqual([_ctrl fibonacci: 4], 3);
-    XCTAssertEqual([_ctrl fibonacci: 5], 5);
-    XCTAssertEqual([_ctrl fibonacci: 6], 8);
-    XCTAssertEqual([_ctrl fibonacci: 7], 13);
-    XCTAssertEqual([_ctrl fibonacci: 8], 21);
-    XCTAssertEqual([_ctrl fibonacci: 9], 34);
-}
-
-- (void)testFibonacciInvalidNumbers {
-    XCTAssertEqual([_ctrl fibonacci:-2], 1);
-    XCTAssertEqual([_ctrl fibonacci:-1], 1);
-    XCTAssertEqual([_ctrl fibonacci:-2123], 1);
-}
-
 - (void)testCheckNum {
     _ctrl.userInput.text = @"9";
     
     [_ctrl checkNum:@"9"];
     
-    NSString *expected = [NSString stringWithFormat:@"%d", [_ctrl fibonacci:9]];
+    NSString *expected = [NSString stringWithFormat:@"%d", 34];
     
     XCTAssertEqualObjects(_ctrl.answerLabel.text, expected, @"should display answer to user");
 }

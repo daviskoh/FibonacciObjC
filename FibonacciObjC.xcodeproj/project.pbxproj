@@ -15,6 +15,9 @@
 		DDCC9AE81AB2438A00213A45 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC9AE71AB2438A00213A45 /* ViewControllerSpec.m */; };
 		DDCC9AF01AB2500300213A45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC9AC71AB2421600213A45 /* ViewController.m */; };
 		DDCC9AF11AB2516600213A45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC9AC71AB2421600213A45 /* ViewController.m */; };
+		DDE5D57E1ABA589C00E63CC0 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5D57D1ABA589C00E63CC0 /* Fibonacci.m */; };
+		DDE5D5801ABA591300E63CC0 /* FibonacciSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5D57F1ABA591300E63CC0 /* FibonacciSpec.m */; };
+		DDE5D5821ABA598D00E63CC0 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE5D57D1ABA589C00E63CC0 /* Fibonacci.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		DDCC9AD51AB2421600213A45 /* FibonacciObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCC9ADA1AB2421600213A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDCC9AE71AB2438A00213A45 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
+		DDE5D57C1ABA589C00E63CC0 /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		DDE5D57D1ABA589C00E63CC0 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
+		DDE5D57F1ABA591300E63CC0 /* FibonacciSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibonacciSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		DDCC9ABE1AB2421600213A45 /* FibonacciObjC */ = {
 			isa = PBXGroup;
 			children = (
+				DDE5D5781ABA586200E63CC0 /* Models */,
 				DDCC9AC31AB2421600213A45 /* AppDelegate.h */,
 				DDCC9AC41AB2421600213A45 /* AppDelegate.m */,
 				DDCC9AC61AB2421600213A45 /* ViewController.h */,
@@ -108,6 +115,7 @@
 			children = (
 				DDCC9AD91AB2421600213A45 /* Supporting Files */,
 				DDCC9AE71AB2438A00213A45 /* ViewControllerSpec.m */,
+				DDE5D57F1ABA591300E63CC0 /* FibonacciSpec.m */,
 			);
 			path = FibonacciObjCTests;
 			sourceTree = "<group>";
@@ -118,6 +126,15 @@
 				DDCC9ADA1AB2421600213A45 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDE5D5781ABA586200E63CC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDE5D57C1ABA589C00E63CC0 /* Fibonacci.h */,
+				DDE5D57D1ABA589C00E63CC0 /* Fibonacci.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE5D57E1ABA589C00E63CC0 /* Fibonacci.m in Sources */,
 				DDCC9AF01AB2500300213A45 /* ViewController.m in Sources */,
 				DDCC9AC51AB2421600213A45 /* AppDelegate.m in Sources */,
 				DDCC9AC21AB2421600213A45 /* main.m in Sources */,
@@ -230,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE5D5821ABA598D00E63CC0 /* Fibonacci.m in Sources */,
 				DDCC9AF11AB2516600213A45 /* ViewController.m in Sources */,
 				DDCC9AE81AB2438A00213A45 /* ViewControllerSpec.m in Sources */,
+				DDE5D5801ABA591300E63CC0 /* FibonacciSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +434,7 @@
 				DDCC9AE11AB2421600213A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDCC9AE21AB2421600213A45 /* Build configuration list for PBXNativeTarget "FibonacciObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +443,7 @@
 				DDCC9AE41AB2421600213A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

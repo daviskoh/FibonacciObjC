@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Fibonacci.h"
 
 @interface ViewController ()
 
@@ -26,24 +27,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Fibonacci Utils
-
-- (int)fibonacci:(int)n {
-    if (n < 0) {
-        return 1;
-    }
-    
-    if (n < 2) {
-        return n;
-    }
-    
-    int firstFibo = [self fibonacci: (n - 1)];
-    
-    int secondFibo = [self fibonacci: (n - 2)];
-    
-    return firstFibo + secondFibo;
-}
-
 #pragma mark - View Bindings
 
 - (IBAction)checkNum:(id)sender {
@@ -55,7 +38,7 @@
         return;
     } else {
         // check fibonacci
-        int userAnswer = [self fibonacci:userInputInt];
+        int userAnswer = [Fibonacci numberAt:userInputInt];
         
         NSString *answer = [NSString stringWithFormat:@"%d", userAnswer];
         
