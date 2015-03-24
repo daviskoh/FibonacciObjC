@@ -20,7 +20,6 @@
   }
   
   int firstFibo = [[self class] numberAt: (n - 1)];
-  
   int secondFibo = [[self class] numberAt: (n - 2)];
   
   return firstFibo + secondFibo;
